@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<hthml lang="id">
-        <head>
-            <title>UDINUS</title>
-        </head>
-        <body>
-            <!-- Bagian atas -->
-            <table bgcolor="lightblue" width="100%">
-             <tr>
-                <td>
-                    <header>
-                     <h1><font color="blue">Universitas Dian Nuswantoro</font></h1>
-                     <p><b><font color="orange">Mengembangkan Generasi Biru hohoho</font></b></p>
-                     </header>
-                </td>
-             </tr>
-            </table>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konsultasi Udinus</title>
+</head>
+<body>
+  <!-- Header -->
+  <header style="background-color: lightblue; text-align: center; padding: 10px;">
+    <h1><font color="blue">Layanan Konsultasi Mahasiswa</font></h1>
+    <p><b><font color="orange">Universitas Dian Nuswantoro</font></b></p>
+  </header>
 
-            <!-- Menu navigasi -->
-            <nav>
-  <table width="100%" bgcolor="cyan" cellspacing="0" cellpadding="10">
-    <tr align="center">
-      <td><a href="index.html">Profil Kampus Udinus</a></td>
-      <td><a href="index.html#fakultasprodi">Fakultas dan Prodi</a></td>
-      <td><a href="index.html#pendaftaran">Pendaftaran Mahasiswa Baru</a></td>
-      <td><a href="konsultasi.html">Konsultasi</a></td>
-      <td><a href="berita.html">Berita Udinus</a></td>
-    </tr>
-  </table>
-</nav>
+  <!-- Navigasi sederhana -->
+  <nav>
+    <table width="100%" bgcolor="cyan" cellspacing="0" cellpadding="10">
+      <tr align="center">
+        <td><a href="index.html">Menu</a></td>
+      </tr>
+    </table>
+  </nav>
 
+  <!-- Konten utama -->
+  <main style="padding: 20px;">
+    <h2>Form Konsultasi</h2>
+    <p align="justify">
+      Silakan isi form berikut untuk mengajukan pertanyaan atau konsultasi.
+    </p>
 
-            <!-- Konten utama -->
-            <main>
-                <!-- Bagian Profil -->
-                <section id="konsultasi.html">
-                    <h2>Konsultasi wir</h2>
-                    <p align="justify">
-                        Di Universitas Dian Nuswantoro (UDINUS), layanan konsultasi disediakan untuk mendukung 
-                        kebutuhan akademik maupun non-akademik mahasiswa. Melalui dosen pembimbing akademik, 
-                        mahasiswa bisa berkonsultasi mengenai rencana studi, kesulitan perkuliahan, hingga strategi 
-                        penyusunan tugas akhir. Selain itu, UDINUS juga memiliki unit layanan konseling dan psikologi 
-                        yang membantu mahasiswa dalam menghadapi permasalahan pribadi, stres, maupun pengembangan 
-                        potensi diri. Konsultasi terkait karier dan dunia kerja pun tersedia melalui UPT Career Center, 
-                        yang memberikan bimbingan persiapan magang, penyusunan CV, hingga peluang kerja sama dengan 
-                        perusahaan. Dengan adanya berbagai layanan konsultasi ini, UDINUS berupaya memastikan mahasiswa 
-                        tidak hanya sukses secara akademik, tetapi juga siap menghadapi tantangan di dunia kerja dan 
-                        kehidupan sehari-hari.
-                        <a href="https://id.wikipedia.org/wiki/Universitas_Dian_Nuswantoro" target="_blank">disini</a>
-                        <br><a href="#top">Kembali Ke Atas</a>
-                    </p>
-                </section>
-                </main>
-            </body>
-    </body>
+    <form>
+      Nama Lengkap : <input type="text" name="nama"><br><br>
+      NIM : <input type="text" name="nim"><br><br>
+      Email : <input type="email" name="email"><br><br>
+      Topik Konsultasi : 
+      <select name="topik">
+        <option value="akademik">Akademik</option>
+        <option value="kemahasiswaan">Kemahasiswaan</option>
+        <option value="beasiswa">Beasiswa</option>
+        <option value="lainnya">Lainnya</option>
+      </select><br><br>
+      Isi Pesan : <br>
+      <textarea name="pesan" rows="5" cols="50"></textarea><br><br>
+      <input type="submit" value="Kirim">
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; margin-top: 20px;">
+    <hr>
+    <p>&copy; 2025 - A12.2024.07163 - Sultan Hafidz</p>
+  </footer>
+</body>
 </html>
